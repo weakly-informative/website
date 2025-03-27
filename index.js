@@ -36,6 +36,10 @@ app.get("/people", (resq, res) => {
     res.render("people.ejs");
 });
 
+app.get("/alumni", (resq, res) => {
+    res.render("alumni.ejs");
+});
+
 app.get("/join", (resq, res) => {
     res.render("join.ejs");
 });
