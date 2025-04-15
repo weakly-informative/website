@@ -17,31 +17,33 @@ app.use(express.static("public"));
 
 
 app.get("/", (req, res) => {
-    res.render("index.ejs");
+    res.render("index.ejs", {title: "Home"});
 });
 
+
+
 app.get("/about", (resq, res) => {
-    res.render("about.ejs");
+    res.render("about.ejs", {title: "About"});
 });
 
 app.get("/overview", (resq, res) => {
-    res.render("overview.ejs");
+    res.render("overview.ejs", {title: "Overview"});
 });
 
 app.get("/publications", (resq, res) => {
-    res.render("publications.ejs");
+    res.render("publications.ejs", {title: "Publications"});
 });
 
 app.get("/people", (resq, res) => {
-    res.render("people.ejs");
+    res.render("people.ejs", {title: "People"});
 });
 
 app.get("/alumni", (resq, res) => {
-    res.render("alumni.ejs");
+    res.render("alumni.ejs", {title: "Alumni"});
 });
 
 app.get("/join", (resq, res) => {
-    res.render("join.ejs");
+    res.render("join.ejs", {title: "Join"});
 });
 
 app.listen(port, () => {
